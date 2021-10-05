@@ -1,0 +1,42 @@
+﻿---                 total               gas                 aqueous             ---                 ---                 ---                 
+water               1E-2                7.99838E-3          9.99951E-1          ---                 ---                 [mole fraction]     
+nitrogen            2E-2                2.00404E-2          2.04275E-9          ---                 ---                 [mole fraction]     
+CO2                 3E-2                3.00606E-2          5.51665E-6          ---                 ---                 [mole fraction]     
+H2S                 1E-2                1.00201E-2          4.32116E-5          ---                 ---                 [mole fraction]     
+methane             8E-1                8.01618E-1          1.56757E-7          ---                 ---                 [mole fraction]     
+ethane              4E-2                4.00809E-2          3.6362E-10          ---                 ---                 [mole fraction]     
+propane             3E-2                3.00607E-2          4.34713E-13         ---                 ---                 [mole fraction]     
+i-butane            2E-2                2.00404E-2          1.21662E-15         ---                 ---                 [mole fraction]     
+n-butane            1E-2                1.00202E-2          9.65591E-16         ---                 ---                 [mole fraction]     
+i-pentane           1E-2                1.00202E-2          7.98257E-18         ---                 ---                 [mole fraction]     
+n-pentane           1E-2                1.00202E-2          4.88805E-18         ---                 ---                 [mole fraction]     
+n-hexane            1E-2                1.00202E-2          1.00454E-20         ---                 ---                 [mole fraction]     
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+Density             ---                 8.45566E0           9.82813E2           ---                 ---                 [kg/m^3]            
+PhaseFraction       ---                 9.97982E-1          2.01786E-3          ---                 ---                 [mole fraction]     
+MolarMass           2.18101E1           2.18178E1           1.80158E1           ---                 ---                 [kg/kmol]           
+Z factor            ---                 9.76045E-1          9.13569E-3          ---                 ---                 [-]                 
+Heat Capacity (Cp)  ---                 2.04781E0           4.80344E0           ---                 ---                 [kJ/kg*K]           
+Heat Capacity (Cv)  ---                 1.61438E0           3.44705E0           ---                 ---                 [kJ/kg*K]           
+Speed of Sound      ---                 3.82797E2           3.21193E3           ---                 ---                 [m/sec]             
+Enthalpy            7.14248E1           7.56626E1           -2.4668E3           ---                 ---                 [kJ/kg]             
+Entropy             -2.55678E-1         -2.45177E-1         -6.54476E0          ---                 ---                 [kJ/kg*K]           
+JT coefficient      ---                 5.3497E-1           -2.11834E-2         ---                 ---                 [K/bar]             
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+Viscosity           ---                 1.19379E-5          5.92369E-4          ---                 ---                 [kg/m*sec]          
+Conductivity        ---                 3.35215E-2          6.4152E-1           ---                 ---                 [W/m*K]             
+SurfaceTension      ---                 6.60285E-2          6.60285E-2          ---                 ---                 [N/m]               
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+Pressure            ---                 10.0                10.0                ---                 ---                 [bar]               
+Temperature         ---                 318.15              318.15              ---                 ---                 [K]                 
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+Model               ---                 SRK-EOS             SRK-EOS             ---                 ---                 -                   
+Mixing Rule         ---                 classic             classic             ---                 ---                 -                   
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+Stream              ---                 test table          test table          ---                 ---                 -                   
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+---                 ---                 ---                 ---                 ---                 ---                 ---                 
+---                 ---                 ---                 ---                 ---                 ---                 ---                 

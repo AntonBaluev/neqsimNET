@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
+using ApprovalTests;
+using ApprovalTests.Reporters;
 using neqsim.thermo.component;
+
 
 // Improting neqsim modules
 using neqsim.thermo.system;
@@ -10,10 +14,11 @@ using NUnit.Framework;
 namespace NeqSimVS
 {
     [TestFixture]
+    [UseReporter(typeof(VisualStudioReporter))]
     public class TPFlashTests
     {
         [Test]              
-        public void Test()
+        public void MockTest()
         {
             var fluid = GetTestFluid();
 
@@ -28,7 +33,10 @@ namespace NeqSimVS
             ThermodynamicOperations ops = new ThermodynamicOperations(fluid);
             ops.TPflash();            
 
-            PrintFluid(fluid);
+            var report = PrintFluid(fluid);
+            Console.Write(report);
+
+            Approvals.Verify(report);
         }
 
         public SystemInterface GetTestFluid() {
@@ -54,19 +62,24 @@ namespace NeqSimVS
             return fluid;
         }
 
-        public void PrintFluid(SystemInterface fluid)
+        public string PrintFluid(SystemInterface fluid)
         {
+            var sb = new StringBuilder();
+            
             var table = fluid.createTable("test table");
-            var table2 = new string[table.Length,table[0].Length];
+            
             foreach (var row in table)
             {
                 foreach (var cell in row)
                 {
                     var toPrint = cell == "" ? "---" : cell;
-                    Console.Write($"{toPrint.PadRight(20)}");
+                    sb.Append($"{toPrint.PadRight(20)}");
+
                 }
-                Console.WriteLine();
+                sb.AppendLine();
             }
+
+            return sb.ToString();
         }
 
         public void PrintComponent(ComponentInterface component)
